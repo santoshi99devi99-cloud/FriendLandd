@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#151112">
+<meta name="description" content="FriendLand — The Aternutus Kingdom. Join our medieval Minecraft community, build your legacy and forge alliances.">
+<title>FriendLand — The Aternutus Kingdom</title>
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Pixelify+Sans:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#151112;--panel:#201a1b;--panel2:#251d1e;--text:#f7f3f3;--muted:#b5a9ab;--red:#e43e43;--line:#403031;--gold:#f0c66c}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#3a1a1d 0,transparent 42%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:#151112e8;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-family:"Pixelify Sans",monospace;font-size:1.3rem;letter-spacing:.03em}.brand img{width:38px;height:38px;object-fit:contain}.brand span{color:var(--red)}nav{display:flex;align-items:center;gap:6px}nav a{font-size:.9rem;color:#d7ccce;padding:9px 12px;border-radius:8px}nav a:hover{background:#ffffff0c;color:white}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid transparent;border-radius:9px;padding:12px 17px;font-weight:800;transition:transform .2s,background .2s,border .2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--red);color:white;box-shadow:0 8px 28px #e43e432b}.outline{border-color:#675052;background:#ffffff05}.small{padding:9px 13px;font-size:.86rem}.menu{display:none;background:none;border:1px solid var(--line);color:white;border-radius:8px;padding:7px 10px}.hero{position:relative;min-height:580px;display:grid;align-items:center;overflow:hidden;border-bottom:1px solid #ffffff12}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#151112 0%,#151112e8 35%,#15111266 72%,#151112a8),url("assets/hero-castle.jpg") center/cover;opacity:.82}.hero:after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent)}.hero-inner{position:relative;z-index:1;padding:80px 0 90px;max-width:760px;animation:rise .8s ease both}.eyebrow{font-family:"Pixelify Sans",monospace;text-transform:uppercase;letter-spacing:.2em;color:#ff777a;font-size:.83rem}.hero h1{font-family:"Chakra Petch",sans-serif;font-size:clamp(2.8rem,7vw,5.7rem);line-height:.98;letter-spacing:-.04em;margin:18px 0}.hero h1 span{color:var(--red);text-shadow:0 0 35px #e43e4340}.hero p{max-width:630px;color:#d3c8ca;font-size:clamp(1rem,2vw,1.16rem)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.section{padding:76px 0}.section-head{margin-bottom:28px}.section-head .eyebrow{font-size:.75rem}.section h2{font-family:"Chakra Petch",sans-serif;font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.1;margin:8px 0}.sub{color:var(--muted);margin:8px 0 0}.grid{display:grid;gap:20px}.playgrid{grid-template-columns:1.25fr .75fr}.panel{position:relative;background:linear-gradient(145deg,#282021,#1c1718);border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:0 18px 55px #00000016}.pad{padding:clamp(22px,4vw,34px)}.steps{list-style:none;padding:0;margin:25px 0 0;display:grid;gap:18px}.steps li{display:flex;gap:14px;align-items:flex-start}.num{flex:0 0 36px;height:36px;border-radius:8px;display:grid;place-items:center;background:var(--red);font-family:"Pixelify Sans",monospace}.steps h3{margin:0;font-size:1rem}.steps p{margin:3px 0 0;color:var(--muted);font-size:.9rem}.server{display:flex;flex-direction:column;justify-content:center;gap:16px}.server .status{display:flex;align-items:center;gap:8px;color:#a6f2ba;font-size:.85rem}.dot{width:8px;height:8px;background:#6ee58d;border-radius:50%;box-shadow:0 0 12px #6ee58d}.ip{border:1px dashed #76575a;background:#110e0f8c;padding:14px;border-radius:9px;font-family:"Chakra Petch",sans-serif;font-size:1.2rem;letter-spacing:.04em;overflow-wrap:anywhere}.hint{color:var(--muted);font-size:.85rem}.modes{grid-template-columns:repeat(3,minmax(0,1fr))}.mode{transition:transform .25s,border-color .25s}.mode:hover{transform:translateY(-5px);border-color:#9b474b}.mode img{display:block;width:100%;height:205px;object-fit:cover}.mode .content{padding:20px}.tag{display:inline-block;color:#ff8b8e;background:#e43e431c;border:1px solid #e43e4340;padding:4px 8px;border-radius:5px;font-size:.72rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}.mode h3{margin:10px 0 5px;font-family:"Chakra Petch",sans-serif;font-size:1.3rem}.mode p{margin:0;color:var(--muted);font-size:.9rem}.stats{grid-template-columns:repeat(4,1fr)}.stat{padding:22px}.stat strong{display:block;font-family:"Pixelify Sans",monospace;font-size:2rem;color:var(--red)}.stat span{color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em}.cta{display:grid;grid-template-columns:1.2fr .8fr;min-height:270px}.cta-copy{padding:clamp(24px,5vw,45px);align-self:center;z-index:1}.cta-art{background:linear-gradient(90deg,#201a1b 0%,transparent 100%),url("assets/hero-castle.jpg") center/cover;min-height:220px}.footer{border-top:1px solid #ffffff18;background:#100d0e;padding:34px 0;color:var(--muted);font-size:.86rem}.footrow{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footrow strong{color:white}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;background:#272021;border:1px solid #665052;border-radius:10px;padding:11px 16px;z-index:99;transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}.mobile-links{display:none;padding:0 0 14px}.mobile-links a{display:block;padding:10px;border-top:1px solid #ffffff12;color:#ddd}.mobile-links.open{display:block}@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@media(max-width:850px){nav,.nav>.discord{display:none}.menu{display:block}.playgrid{grid-template-columns:1fr}.modes{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.hero{min-height:550px}.hero:before{background:linear-gradient(90deg,#151112e8,#151112a8),url("assets/hero-castle.jpg") center/cover}.hero-inner{padding:65px 0}.section{padding:54px 0}.modes{grid-template-columns:1fr}.mode img{height:220px}.cta{grid-template-columns:1fr}.cta-art{min-height:140px;grid-row:1}.stats{gap:10px}.stat{padding:16px}.stat strong{font-size:1.7rem}.brand{font-size:1.1rem}.wrap{width:min(100% - 28px,1120px)}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#home"><img src="assets/logo-emblem.png" alt=""><span>Friend</span>Land</a>
+    <nav aria-label="Main navigation"><a href="#home">Home</a><a href="#play">Play</a><a href="#modes">Game Modes</a><a href="#news">News</a><a href="#community">Community</a><a href="admin.html">Admin</a></nav>
+    <a class="btn primary small discord" href="#community">Join Community ↗</a>
+    <button class="menu" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </div>
+  <div class="wrap mobile-links" id="mobileLinks"><a href="#home">Home</a><a href="#play">Play</a><a href="#modes">Game Modes</a><a href="#news">News</a><a href="#community">Community</a><a href="admin.html">Admin Panel</a></div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-inner">
+<div class="eyebrow">The Aternutus Kingdom</div>
+<h1>Welcome to<br><span>FriendLand</span></h1>
+<p>Build your legacy. Forge powerful alliances. Explore a medieval Minecraft kingdom where your next adventure is waiting.</p>
+<div class="actions"><a class="btn primary" href="#play">⚔ Play Now</a><a class="btn outline" href="#community">Join Discord ↗</a><a class="btn outline" href="#rules">View Rules</a></div>
+</div></div></section>
+<section class="section" id="play"><div class="wrap grid playgrid">
+<div class="panel pad"><div class="eyebrow">How to join</div><h2>Enter the kingdom<br>in three steps</h2>
+<ol class="steps"><li><span class="num">1</span><div><h3>Open Minecraft</h3><p>Launch Minecraft and open the Multiplayer menu.</p></div></li><li><span class="num">2</span><div><h3>Add the server</h3><p>Choose “Add Server” and enter the server address below.</p></div></li><li><span class="num">3</span><div><h3>Claim your land</h3><p>Join the kingdom, meet your allies and start building your legacy.</p></div></li></ol>
+<div class="actions"><button class="btn primary" id="copyIp">Copy Server IP</button><a class="btn outline" href="#community">Need help?</a></div></div>
+<div class="panel pad server"><div class="eyebrow">Server connection</div><h2>Ready to play?</h2><div class="status"><span class="dot"></span> Server address</div><div class="ip" id="serverIp">play.FriendLand.in</div><p class="hint">Tap the button to copy the address, then paste it into Minecraft Multiplayer.</p><div><span class="tag">Minecraft Community</span></div></div>
+</div></section>
+<section class="section" id="modes"><div class="wrap"><div class="section-head"><div class="eyebrow">Play your way</div><h2>Featured game modes</h2><p class="sub">Every corner of the kingdom offers a new adventure.</p></div>
+<div class="grid modes"><article class="panel mode"><img src="assets/mode-survival.jpg" alt="Minecraft survival landscape" loading="lazy"><div class="content"><span class="tag">Explore</span><h3>Survival</h3><p>Gather resources, build your home and carve out your own corner of the kingdom.</p></div></article>
+<article class="panel mode"><img src="assets/mode-pvp.jpg" alt="Minecraft player versus player arena" loading="lazy"><div class="content"><span class="tag">Compete</span><h3>PvP Battles</h3><p>Test your skills, challenge rivals and prove yourself in battle.</p></div></article>
+<article class="panel mode"><img src="assets/hero-castle.jpg" alt="Medieval castle" loading="lazy"><div class="content"><span class="tag">Build</span><h3>Kingdom Life</h3><p>Create something lasting with friends in a medieval-inspired world.</p></div></article></div>
+</div></section>
+<section class="section" id="news"><div class="wrap"><div class="section-head"><div class="eyebrow">From the throne room</div><h2>Latest announcements</h2><p class="sub">News and updates from the FriendLand community.</p></div><div class="panel pad"><h3>Stay connected with FriendLand</h3><p class="sub">Announcements, events and server updates will be shared with the community.</p><a class="btn outline" href="#community">Follow community updates ↗</a></div></div></section>
+<section class="section"><div class="wrap grid stats"><div class="panel stat"><strong>✦</strong><span>Build your legacy</span></div><div class="panel stat"><strong>⚔</strong><span>Forge alliances</span></div><div class="panel stat"><strong>♜</strong><span>Explore worlds</span></div><div class="panel stat"><strong>∞</strong><span>Make memories</span></div></div></section>
+<section class="section" id="community"><div class="wrap panel cta"><div class="cta-copy"><div class="eyebrow">Join the community</div><h2>Forge alliances with us</h2><p class="sub">Meet players, get help and stay updated on the latest kingdom news.</p><div class="actions"><a class="btn primary" href="https://discord.com/" target="_blank" rel="noopener">Open Discord ↗</a><a class="btn outline" href="#play">How to join</a></div></div><div class="cta-art" role="img" aria-label="Medieval castle landscape"></div></div></section>
+<section class="section" id="rules"><div class="wrap panel pad"><div class="eyebrow">The kingdom's code</div><h2>Respect the realm</h2><p class="sub">Be respectful to players, avoid cheating or exploiting, and follow staff instructions. Keep the community welcoming for everyone.</p></div></section>
+</main>
+<footer class="footer"><div class="wrap footrow"><div><strong>FriendLand</strong><br>The Aternutus Kingdom · Minecraft Community</div><div>© <span id="year"></span> FriendLand. All rights reserved.</div></div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite">Server IP copied!</div>
+<script>
+const menuBtn=document.getElementById('menuBtn'), mobileLinks=document.getElementById('mobileLinks');
+menuBtn.addEventListener('click',()=>{const open=mobileLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'✕':'☰'});
+mobileLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobileLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('copyIp').addEventListener('click',async()=>{const ip=document.getElementById('serverIp').textContent.trim();try{await navigator.clipboard.writeText(ip)}catch(e){const t=document.createElement('textarea');t.value=ip;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}const toast=document.getElementById('toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),2200)});
+</script>
+
+<script>
+(function(){
+  const KEY='friendland_site_content_v1';
+  const defaults={
+    serverIp:'play.FriendLand.in',
+    serverStatus:'Online',
+    announcementTitle:'Stay connected with FriendLand',
+    announcementText:'Announcements, events and server updates will be shared with the community.',
+    rules:'Be respectful to players, avoid cheating or exploiting, and follow staff instructions. Keep the community welcoming for everyone.',
+    storeTitle:'FriendLand Store',
+    storeText:'Store items and perks will be listed here.',
+    voteTitle:'Support the Kingdom',
+    voteText:'Vote for FriendLand on your server listing sites to help the community grow.',
+    staffTitle:'Join the Staff Team',
+    staffText:'Interested in helping the community? Contact the team through Discord to learn about staff applications.',
+    newsTitle:'Latest announcements',
+    newsText:'News and updates from the FriendLand community.'
+  };
+  let data={...defaults};
+  try{data={...data,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch(e){}
+  const ip=document.getElementById('serverIp'); if(ip) ip.textContent=data.serverIp;
+  const status=document.querySelector('.server .status'); if(status) status.innerHTML='<span class="dot"></span> Server status: '+escapeHtml(data.serverStatus);
+  const newsHeading=document.querySelector('#news h2'); if(newsHeading) newsHeading.textContent=data.newsTitle;
+  const newsPanel=document.querySelector('#news .panel');
+  if(newsPanel){const h=newsPanel.querySelector('h3'); const p=newsPanel.querySelector('p'); if(h)h.textContent=data.announcementTitle; if(p)p.textContent=data.announcementText;}
+  const rulesP=document.querySelector('#rules .sub'); if(rulesP) rulesP.textContent=data.rules;
+  const cta=document.querySelector('#community .cta-copy');
+  if(cta){const h=cta.querySelector('h2'); const p=cta.querySelector('p'); if(h)h.textContent=data.staffTitle; if(p)p.textContent=data.staffText;}
+  const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  // Editable content for store/vote sections can be added from the admin and is shown as cards.
+  const store=data.storeTitle||defaults.storeTitle, vote=data.voteTitle||defaults.voteTitle;
+  const modes=document.getElementById('modes');
+  if(modes && !document.getElementById('customStoreVote')){
+    const section=document.createElement('section'); section.className='section'; section.id='customStoreVote';
+    section.innerHTML='<div class="wrap grid playgrid"><div class="panel pad"><div class="eyebrow">Community shop</div><h2 id="storeTitle"></h2><p class="sub" id="storeText"></p></div><div class="panel pad"><div class="eyebrow">Community support</div><h2 id="voteTitle"></h2><p class="sub" id="voteText"></p></div></div>';
+    modes.parentNode.insertBefore(section,modes.nextSibling);
+  }
+  const put=(id,val)=>{const el=document.getElementById(id);if(el)el.textContent=val};
+  put('storeTitle',data.storeTitle);put('storeText',data.storeText);put('voteTitle',data.voteTitle);put('voteText',data.voteText);
+})();
+</script>
+
+</body>
+</html>
